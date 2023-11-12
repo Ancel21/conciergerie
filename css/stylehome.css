@@ -1,0 +1,172 @@
+
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+*{ 
+    font-family:  'Montserrat';
+}
+
+body{
+    margin: 0 auto ;
+    background-color: #f8f0f0;
+    background-image: url("images/fond.jpg");
+}
+.head{
+     
+}
+nav.nav {
+    flex: 1;
+    text-align: right;
+}
+
+div.contientc{
+    flex: 1;
+    text-align: left;
+
+}
+ .contientc ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.contientc ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+.contientc button{
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: rgb(253, 205, 231);
+    color: rgb(255, 0, 136);
+    border-radius: 30px;
+   
+}
+.contientc button:hover{
+    background: #f8f0f0;
+}
+ 
+
+header.header{
+    display: flex ;
+    align-items: center;
+}
+.contient{
+    padding-left: 15px;
+    padding-right: 25px;
+}
+div.logo {
+
+ font-size: 20px;
+
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul li a {
+   text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+nav ul li a:hover{
+    color: rgb(255, 2, 137);
+}
+.row{
+  
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    width: 31%;
+    height: 18%;
+}
+.col-2 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.col-2 a{
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: rgb(253, 205, 231);
+    color: rgb(255, 0, 136);
+    border-radius: 40px;
+    transition: transform 0.4s;
+
+}
+.col-2 a:hover{
+    background:  rgb(255, 146, 204);
+
+}
+
+.contient1 h2{
+    text-align: center;
+
+}
+
+/* style de la section catégories*/
+.categories{
+    margin: 70px 0;
+    background-color: rgb(249, 235, 243);
+    padding: 0px 15px ;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto;
+    transition: transform 0.4s;
+
+}
+.col-3 img{
+    width: 100%;
+}
+.row2{
+   display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contient1 h2{
+    font-size: 50px;
+    
+}
+
+/* section des meilleurs produits */
+.best_product{
+    margin: 70px 0;
+    background-color: rgb(249, 235, 243);
+    padding: 0px 15px ;
+    
+}
+
+.col_4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+}
+
+.best_product .col-3:hover{
+    transform: translateY(-8px);
+
+}
+
+.rating .fa{
+    color: deeppink;
+}
+
+
+

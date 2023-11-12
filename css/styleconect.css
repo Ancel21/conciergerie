@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+:root{
+    --font-style:'Nunito Sans'. sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+ 
+    font-family: var(--font-style);
+}
+.client-box{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 800px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background: rgb(245, 206, 227);
+    box-shadow: 0 15px 25px  rgb(254, 109, 186);
+    border-radius: 10px;
+}
+.client-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255); 
+    margin-bottom: 30px ;
+    border: none;
+    border-bottom: 1px solid  rgb(45, 13, 13);
+    outline: none;
+    background: transparent;
+}
+.client-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color:rgb(75, 30, 30) ;
+    pointer-events: none;
+    transition: -5s;
+}
+.client-box .user-box input:focus~label,
+.client-box .user-box input:valid~label{
+    top: -85px;
+    left: 0;
+    color: rgb(159, 90, 125)  ;
+}
+.login-box{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background: rgb(245, 206, 227);
+    box-shadow: 0 15px 25px  rgb(254, 109, 186);
+    border-radius: 10px;
+}
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(45, 13, 13);
+    text-align: center;
+}
+.login-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255); 
+    margin-bottom: 30px ;
+    border: none;
+    border-bottom: 1px solid  rgb(45, 13, 13);
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color:rgb(75, 30, 30) ;
+    pointer-events: none;
+    transition: -5s;
+}
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label{
+    top: -85px;
+    left: 0;
+    color: rgb(159, 90, 125)  ;
+}
+#submit{
+    padding: 10px 20px;
+    color: deeppink;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid  deeppink;
+    margin: auto;
+}
+#submit:hover{
+    background:  rgb(241, 154, 200);
+    color: deeppink;
+    border-radius: 5px;
+    box-shadow: 0 0 5px  rgb(241, 154, 200),0 0 25px  rgb(241, 154, 200), 0 0 50px  rgb(241, 154, 200), 0 0 100px  rgb(241, 154, 200);
+}
+#reset{
+    padding: 10px 20px;
+    color: deeppink;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid  deeppink;
+    margin: auto;
+}
+#reset:hover{
+    background:  rgb(241, 154, 200);
+    color: deeppink;
+    border-radius: 5px;
+    box-shadow: 0 0 5px  rgb(241, 154, 200),0 0 25px  rgb(241, 154, 200), 0 0 50px  rgb(241, 154, 200), 0 0 100px  rgb(241, 154, 200);
+}
+.button-form{
+    display: flex;
+    flex-direction:row ;
+    margin: 20px;
+}
+#register{
+    font-size: 14px ;
+    text-decoration: none;
+    color:  rgb(14, 7, 11) ;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+#register a{
+    margin: auto;
+    color: deeppink;
+   text-decoration: none;
+}

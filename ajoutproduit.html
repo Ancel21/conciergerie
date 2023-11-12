@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylepaiement.css">
+    <title>ajouter produit</title>
+</head>
+<body>
+    <div class="container"> 
+        <form action="php/register_produit.php" method="post">
+            <div class="inputBox">
+                <span>nom du produit</span>
+                <input type="text" name="nom" maxlength="16" class="card-number-input">
+            </div>
+            <div class="inputBox">
+                <span>code barre</span>
+                <input type="text" name="code_barre" class="card-holder-input" >
+            </div>
+            <div class="flexbox">
+                <div class="inputBox">
+                    <span>prix en &euro;</span>
+                    <input type="text" name="prix_unitaire" class="card-holder-input" >
+                </div>
+                <div class="inputBox">
+                    <span>quantité</span>
+                    <input type="text" name="quantite" class="card-holder-input" >
+                </div>
+                <div class="inputBox">
+                    <span>Catégories</span>
+                    <select name="" id="" class="month-input">
+                        <option value="mont" selected disabled>Catégories</option>
+                        <option value="01">parfum</option>
+                        <option value="02">maquillage</option>
+                        <option value="03">beauté</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="enregistrer" class="submit-btn">
+        </form>
+    </div>
+    </div>
+</body>
+</html>

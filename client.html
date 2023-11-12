@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylehome.css">
+    <link rel="stylesheet" href="css/styleconect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>contact</title>
+</head>
+<body>
+    <section class="head"> 
+        <div class="contient">
+            <header class="header"> 
+                <div class="logo">
+                     <h2>SkinCare.</h2>
+                </div>
+                <nav class="nav">
+                      <ul>
+                       <li><a href="accueil.html"><i class="fa fa-home" aria-hidden="true"></i>
+                           Home</a></li>
+                          <li><a href="produit.html"><i class="fa fa-product-hunt" aria-hidden="true"></i>
+                           Products</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="">Reviews</a></li>
+                          <li><a href="client.html"><i class="fa fa-address-book" aria-hidden="true"></i> Client</a></li>
+                          <li><a href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>commande
+                           <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>
+                           </a></li>
+                          </a></li>
+                     </ul>
+                </nav>
+            </header>
+         </div>
+     </section>
+     <section class="commande">
+        <div class="contientc">
+            <ul>
+                <button id="createOrderButton">Créer client</button>
+              <div id="divclient" class="client-box" style="display:none;">
+                <form id="orderForm" style="display:none;" action="php/register_customer.php" method="post">
+                    <div class="user-box">
+                     <input type="text" id="nom"name="nom">
+                     <label for="nom">Nom</label>
+                    </div>
+                    <div class="user-box"> 
+                     <input type="text" id="prenom" name="prenom"> 
+                     <label for="prenom">Prénom</label> 
+                    </div>
+                    <div class="user-box">  
+                     <input type="text" id="adresse" name="adresse"> 
+                     <label for="adresse">Adresse</label>
+                    </div>
+                    <div class="user-box"> 
+                     <input type="email" id="mail" name="mail"> 
+                     <label for="mail">Email</label> 
+                    </div>
+                    <div class="user-box"> 
+                     <input type="tel" id="tel" name="tel">
+                     <label for="tel">Téléphone</label> 
+                    </div>
+                    <div class="user-box"> 
+                     <input type="number" id="age" name="age" min="16" max="90" value="18">
+                     <label for="age">Age</label> 
+                    </div>
+                    <div class="user-box"> 
+                     <input type="text" id="facebook" name="facebook">
+                     <label for="facebook">Facebook</label> 
+                    </div>
+                    <div class="user-box"> 
+                     <input type="text" id="insta" name="insta">
+                     <label for="insta">Instagram</label> 
+                    </div>
+                    <div class="button-form">
+                     <input type="submit" id="submit"value="Enregistrer"> 
+                     <input type="reset" id="reset" value="Annuler">
+                    </div>
+                   </form>
+                 
+                   <script>
+                    // Récupération de la référence vers le bouton
+                    var createOrderButton = document.getElementById("createOrderButton");
+                    var divclient=document.getElementById("divclient");
+                    var reset = document.getElementById("reset")
+    
+                    // Récupération de la référence vers le formulaire
+                    var orderForm = document.getElementById("orderForm");
+                  
+                    // Ajout d'un écouteur d'événement sur le bouton
+                    createOrderButton.addEventListener("click", function() {
+                      // Affichage du formulaire
+                      orderForm.style.display = "block";
+                      divclient.style.display="block";
+                    });
+                    reset.addEventListener("click" , function(){
+                      orderForm.style.display = "none";
+                      divclient.style.display="none";
+                    });
+                  </script>
+
+                </div>
+                <button id="createOrderButton">Modifier client</button>
+                
+                <form>
+                <button id="clientlist" formaction="php/afficheclient.php">Liste de clients</button>
+                </form>
+                
+                <button id="buttoncon">consulter une fiche client</button>
+                <form id="ficheclient" style="display:none;" action="php/ficheclientid.php" method="post">
+                    <div class="login-box">
+                    <div class="user-box">
+                     <input type="text" id="id"name="id">
+                     <label for="id">id</label>
+                    <!-- <input type="text" id="prenom" name="prenom client"> 
+                     <label for="prenom">Prénom</label>  -->
+                     <button  type="submit" id="submit" name="submit">search</button> 
+                    </div> 
+                    </div>
+                     <script>
+                        var buttoncon = document.getElementById("buttoncon");
+                        var ficheclient=document.getElementById("ficheclient");
+                        buttoncon.addEventListener("click",function(){
+                          ficheclient.style.display="block"
+                        });
+                     </script>
+
+                    </div>
+                   
+                </form>
+                </select>
+             
+            </ul>
+           
+        </div>
+    
+</body>
+</html>

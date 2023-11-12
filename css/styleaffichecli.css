@@ -1,0 +1,19 @@
+ /* Style pour le tableau */
+ table {
+    border-collapse: collapse; /* Supprime les bordures doubles */
+    width: 100%; /* Largeur du tableau */
+    background-color: pink; /* Couleur de fond rose */
+  }
+  
+  /* Style pour les en-têtes de colonne */
+  th {
+    background-color: lightblue; /* Couleur de fond bleue claire */
+    text-align: left; /* Alignement du texte à gauche */
+    padding: 8px; /* Espacement interne */
+  }
+  
+  /* Style pour les cellules */
+  td {
+    border: 1px solid #ddd; /* Bordures fines en gris clair */
+    padding: 8px; /* Espacement interne */
+  }

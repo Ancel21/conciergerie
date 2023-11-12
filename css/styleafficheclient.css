@@ -1,0 +1,13 @@
+.customer {
+    background-color: pink;
+    padding: 10px;
+    margin: 10px;
+}
+.customer p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+.customer:hover {
+    box-shadow: 0 0 10px #ccc;
+}

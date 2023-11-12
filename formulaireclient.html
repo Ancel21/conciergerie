@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleconect.css">
+    <title>client-form</title>
+</head>
+<body>
+    <div class="client-box">
+    <form action="php/register_customer.php" method="post">
+        <div class="user-box">
+         <input type="text" id="nom"name="nom">
+         <label for="nom">Nom</label>
+        </div>
+        <div class="user-box"> 
+         <input type="text" id="prenom" name="prenom"> 
+         <label for="prenom">Prénom</label> 
+        </div>
+        <div class="user-box">  
+         <input type="text" id="adresse" name="adresse"> 
+         <label for="adresse">Adresse</label>
+        </div>
+        <div class="user-box"> 
+         <input type="email" id="mail" name="mail"> 
+         <label for="mail">Email</label> 
+        </div>
+        <div class="user-box"> 
+         <input type="tel" id="tel" name="tel">
+         <label for="tel">Téléphone</label> 
+        </div>
+        <div class="user-box"> 
+         <input type="number" id="age" name="age" min="16" max="90" value="18">
+         <label for="age">Age</label> 
+        </div>
+        <div class="user-box"> 
+         <input type="text" id="facebook" name="facebook">
+         <label for="facebook">Facebook</label> 
+        </div>
+        <div class="user-box"> 
+         <input type="text" id="insta" name="insta">
+         <label for="insta">Instagram</label> 
+        </div>
+        <div class="button-form">
+         <input type="submit" id="submit"value="Enregistrer"> 
+         <input type="reset" id="reset" value="Annuler">
+        </div>
+       </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>panier</title>
+</head>
+<body>
+    <section class="head"> 
+        <div class="contient">
+            <header class="header"> 
+                <div class="logo">
+                     <h2>SkinCare.</h2>
+                </div>
+                <nav class="nav">
+                      <ul>
+                       <li><a href="accueil.html"><i class="fa fa-home" aria-hidden="true"></i>
+                           Home</a></li>
+                          <li><a href="produit.html"><i class="fa fa-product-hunt" aria-hidden="true"></i>
+                           Products</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="">Reviews</a></li>
+                          <li><a href="client.html"><i class="fa fa-address-book" aria-hidden="true"></i> client</a></li>
+                          <li><a href="panier.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>commande
+                           <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>
+                           </a></li>
+                          </a></li>
+                     </ul>
+                </nav>
+            </header>
+         </div>
+     </section>
+     <!--gestion des commandes-->
+     <section class="commande">
+        <div class="contientc">
+            <ul>
+             <button id="createOrderButton">Créer Commande</button>
+             <form action="php/register_commande.php" method="post" id="orderForm" >
+                <input type="text" id="nom" name="nom" placeholder="Nom client">
+                <input type="text" id="prenom" name="prenom" placeholder="prenom client">
+                <input  type="submit" id="createOrderButton1" value="creer">
+              </form>
+      
+            <form action="php/register_lignecommande.php" id="orderForm1" style="display:none;">
+                <input type="text" id="product" placeholder="Produit">
+                <input type="text" id="quantity" placeholder="Quantité">
+                <button id="submitbutton" type="submit">ajouter</button>
+              </form>
+
+             
+              
+              
+              <script>
+                // Récupération de la référence vers le bouton
+                var createOrderButton = document.getElementById("createOrderButton");
+                var createOrderButton1 = document.getElementById("createOrderButton1");
+                var submitbutton = document.getElementById("submitbutton");
+
+                
+                // Récupération de la référence vers le formulaire
+                var orderForm = document.getElementById("orderForm");
+                var orderForm1 = document.getElementById("orderForm1");
+                
+              
+                // Ajout d'un écouteur d'événement sur le bouton
+                createOrderButton.addEventListener("click", function() {
+                  // Affichage du formulaire
+                  orderForm.style.display = "block";
+                });
+                createOrderButton1.addEventListener("click", function() {
+                    
+                  // Affichage du formulaire
+                  orderForm1.style.display = "block";
+                  orderForm.style.display = "block";
+                });
+                
+              
+              
+              </script>
+            
+             
+         
+              <button id="createOrderButton3">éditer une Commande</button>
+                <form action="php/editer_lignecommande.php" method="post" id="orderForme" style="display:none;" >
+                  <input type="text" id="id_com" name="id_com" placeholder="id commande">
+                  <input  type="submit" id="createOrderButton4" value="selectionner">
+                </form>
+                <script>
+                var createOrderButton3 = document.getElementById("createOrderButton3");
+                var orderForme = document.getElementById("orderForme");
+                createOrderButton3.addEventListener("click", function() {
+                  // Affichage du formulaire
+                  orderForme.style.display = "block";
+                });
+
+                </script>
+
+              <form>
+              <button id="createOrderButton">supprimer Commande</button>
+              </form>
+
+              <form>
+              <button id="createOrderButton" formaction="php/affichecommande.php">consulter les Commandes</button>
+              </form>
+
+              <form><button id="createOrderButton">Editer une facture</button></form>
+            </ul>
+           
+        </div>
+
+     </section>
+     
+</body>
+</html>

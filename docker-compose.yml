@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+  db:
+    image: mysql:latest
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD="root"
+      - MYSQL_DATABASE='conciergerie'
+      - MYSQL_USER='root'
+      - MYSQL_PASSWORD=''
+    volumes:
+      - C:\wamp64\bin\mysql\mysql8.0.31\data\conciergerie:/var/lib/mysql
